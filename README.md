@@ -36,3 +36,47 @@ The dataset used in this project is the **Fetal Head Abnormalities Dataset**, wh
 •**Class Imbalance:** Some fetal head abnormalities might have significantly fewer samples than others.\
 •**High Intra-Class Variability:** Variations in image quality, angles, and noise.\
 •**Small Sample Size:** Few-Shot Learning techniques must be leveraged to improve generalization.
+
+## Methodology
+This project follows a structured deep learning pipeline to systematically preprocess data, train models, evaluate performance, and compare results.
+
+### 1. Data Preprocessing
+Image resizing and normalization.  
+Augmenting images using both traditional and advanced augmentation techniques.  
+Splitting the dataset into training, validation, and test sets.  
+Handling class imbalance using techniques such as weighted loss functions or oversampling/undersampling.  
+
+### 2. Model Implementation
+Both **ResNet50** and **MobileNetV3-Small** are implemented using PyTorch and trained from scratch or using transfer learning. Their architectures are:  
+
+**ResNet50**: A deep residual network with skip connections that mitigate vanishing gradients.  
+**MobileNetV3-Small**: A lightweight CNN optimized for mobile applications, using depthwise separable convolutions.  
+
+### 3. Training Strategies
+Three different training strategies are employed:  
+
+#### - Traditional Augmentations (Zero-Shot Learning)
+  - Images are augmented using rotation, flipping, and cropping.  
+
+#### - Advanced Augmentations (Zero-Shot Learning)
+  - Mixup and CutMix are used to improve generalization.  
+
+#### - Few-Shot Learning (FSL)
+  - Models are trained with very few labeled examples to evaluate their ability to learn effectively with limited data.  
+
+### 4. Evaluation Metrics
+Model performance is assessed using:  
+
+**Confusion Matrix**: Visual representation of true vs. predicted labels.  
+**Accuracy**: Overall correctness of predictions.  
+**Precision**: The proportion of true positive classifications out of all predicted positives.  
+**Recall**: The proportion of true positive classifications out of all actual positives.  
+**F1-Score**: Harmonic mean of precision and recall.  
+
+### 5. Comparison and Analysis
+After training and evaluation, both models are compared based on:  
+
+Performance on different augmentation techniques.  
+Impact of Few-Shot Learning on classification accuracy.  
+Trade-offs between accuracy and computational efficiency.  
+Real-world feasibility for medical applications.
