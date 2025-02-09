@@ -26,3 +26,10 @@ In this assignment, we aim to develop and compare two widely used convolutional 
 • Recall\
 • F1-Score\
 **5.Compare and analyze** the results obtained from the two models.
+
+**Dataset Details :**\
+The dataset used in this project is the **Fetal Head Abnormalities Dataset**, which consists of ultrasound images categorized into different classes of abnormalities. Proper preprocessing is required before training the models.\
+**Key challenges of the dataset:**\
+•**Class Imbalance:** Some fetal head abnormalities might have significantly fewer samples than others.\
+•**High Intra-Class Variability:** Variations in image quality, angles, and noise.\
+•**Small Sample Size:** Few-Shot Learning techniques must be leveraged to improve generalization.
