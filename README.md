@@ -13,9 +13,9 @@ In this assignment, we aim to develop and compare two widely used convolutional 
 • **Few-Shot Learning** (FSL): Training models with very few labeled examples per class.\
 **3.Investigate the effect of different **data augmentation strategies**:**\
 **Traditional augmentations:**\
-  • Rotation\
+ $$• Rotation\
   • Horizontal Flip\
-  • Cropping\
+  • Cropping\$$
 **Advanced augmentations:**\
 **Mixup:** A data augmentation technique that blends two images and their labels to improve generalization.\
 **CutMix:** Replaces a portion of an image with a patch from another image, encouraging stronger regularization.\
