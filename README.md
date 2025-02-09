@@ -80,3 +80,26 @@ Performance on different augmentation techniques.
 Impact of Few-Shot Learning on classification accuracy.  
 Trade-offs between accuracy and computational efficiency.  
 Real-world feasibility for medical applications.
+
+## Technologies Used
+**Deep Learning Framework**: PyTorch  
+**Pretrained Models**: ResNet50, MobileNetV3-Small  
+**Data Augmentation Techniques**: Albumentations, Torchvision Transforms  
+**Evaluation & Visualization**: Matplotlib, Seaborn, Scikit-learn  
+**Few-Shot Learning**: Prototypical Networks or Transfer Learning  
+
+## Expected Outcomes
+Comparison of **ResNet50** and **MobileNetV3-Small** for medical image classification.  
+Insights on the effectiveness of **traditional vs. advanced augmentation techniques**.  
+Impact of **Few-Shot Learning** in handling medical datasets with limited annotations.  
+Best-performing model for **fetal head abnormality classification**.  
+
+## Conclusion
+This project serves as an extensive comparative study on the application of **deep learning for medical image classification**. It highlights the **advantages and challenges** of using ResNet50 and MobileNetV3-Small under different **augmentation techniques** and **few-shot learning scenarios**. The findings from this research can contribute to developing **automated, efficient, and scalable solutions for medical diagnostics in prenatal care**.  
+
+### Future Work
+For future work, the approach can be extended to:  
+
+Explore additional deep learning architectures such as **EfficientNet** and **Vision Transformers (ViTs)**.  
+Incorporate **semi-supervised or self-supervised learning techniques**.  
+Develop a **real-time deployment framework for clinical use**.
